@@ -3,6 +3,8 @@ from discord.ext import commands
 import settings
 import pretty_help
 import settings.utils as utils
+from keep_alive import keep_alive
+keep_alive()
 
 class MyBot(commands.Bot):
     async def setup_hook(self):
